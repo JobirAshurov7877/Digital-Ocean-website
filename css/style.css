@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Roboto', sans-serif;
+}
+:root{
+    --color-blue: hsl(208, 100%, 48%);
+    --color-black: hsl(0, 0%, 0%);
+}
+html{
+     scroll-behavior: smooth;
+}
+li{
+     list-style: none;
+}
+a{
+     text-decoration: none;
+}
+.navbar{
+     width: 100%;
+     height: 81px;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     margin-top: 27px;
+    border-bottom: 1px solid rgba(3, 132, 245, 0.1);
+     
+}
+.navbar .logo{
+     width: 69px;
+     height: 69px;
+}
+.logo .a{
+     width: 100%;
+     height: 100%;
+}
+
+.navList{
+     width: auto;
+     height: 100%;
+     display: flex;
+}
+.navList .navListItem{
+     height: 100%;
+     width: 80px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-bottom: 1px solid rgba(3, 132, 245, 0);
+     margin-left: 25px;
+     cursor: pointer;
+}
+.navList .navListItem.active{
+     border-bottom: 1px solid var(--color-blue);
+}
+.navList .navListItem .navLink{
+     color: var(--color-black);
+     font-size: 20px;
+     font-weight: 400;
+     transition: 0.2s;  
+     cursor: pointer;
+}
+.navListItem .navLink:hover{
+     color: var(--color-blue);
+     
+}
+.navListItem.active .navLink{
+     color: var(--color-blue);
+}
+
+.getStarted{
+     width: 161px;
+     height: 52px;
+     background: #0082F4;
+     border-radius: 6px;
+     font-weight: 400;
+     font-size: 20px; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.getStarted:hover{
+     opacity: 0.9;
+}
+.getStarted a{
+     color: #fff;
+}
+
+
+/* mainSection */
+.main{
+     width: 100%;
+     padding: 100px 224px;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+}
+.main .infotmation{
+     width: 531px;
+     height: 341px;
+}
+.infotmation h4{
+     color: var(--color-blue);
+     letter-spacing: 0.1em;
+     text-transform: uppercase;
+     font-weight: 400;
+     font-size: 25px;
+     line-height: 29px;
+}
+.infotmation h1{
+     font-weight: 700;
+     font-size: 60.55px;
+     color: var(--color-black);
+}
+.infotmation p{
+     font-weight: 400;
+     font-size: 16px;
+     color: var(--color-black);
+     line-height: 150%;
+     opacity: 0.6;
+}
+.informationButton{
+     width: 100%;
+     display: flex;
+     margin-top: 50px;
+}
+.informationButton .Btn1{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 194px;
+     height: 63px;
+     border-radius: 10px;
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 23px;   
+     color: #FFFFFF;
+     background: var(--color-blue);
+     margin-right: 30px;
+}
+.informationButton .playVideo{
+     width: 188px;
+     height: 63px;
+     border: 1px solid rgba(0, 130, 244, 0.1);
+     border-radius: 10px;
+     
+}
+.playVideo a{
+     width: 100%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: var(--color-black);
+     font-size: 16px;
+}
+.playVideo a img{
+     margin-right: 15px;
+}
+
+
+/*  About Us */
+.aboutUs{
+     width: 100%;
+     height: auto;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 200px 221px;
+}
+.aboutUs .community__Iformation{
+     width: 503px;
+     height: 359px;
+}
+.aboutUs .community__Iformation h4{
+     font-weight: 500;
+     font-size: 25px;
+     line-height: 29px;
+     letter-spacing: 0.1em;
+     text-transform: uppercase; 
+     color: var(--color-blue);
+}
+.aboutUs .community__Iformation h2{
+     font-weight: 700;
+     font-size: 49px;
+     line-height: 130%;
+     color: var(--color-black);
+}
+.aboutUs .community__Iformation p{
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 150%;
+     color: #000000;
+     opacity: 0.6;
+}
+.aboutUs__Btn{
+     width: 193px;
+     height: 63px;    
+     background: #0082F4;
+     border-radius: 10px;
+     display: grid;
+     place-items: center;
+
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 23px;   
+     color: #FFFFFF;
+     margin-top: 50px;
+}
+
+.How__WeWork{
+     width: 100%;
+     height: auto;
+     padding: 200px 221px;
+}
+.How__WeWork .title{
+     text-align: center;
+     font-weight: 600;
+     font-size: 48.44px;
+     line-height: 150%;
+     color: var(--color-black);
+}
+.How__WeWork-body{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-top: 60px;
+}
+.How__WeWork-body .card{
+     width: 324px;
+     height: 346px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.How__WeWork-body .cardBody{
+     margin-top: 60px;
+}
+.How__WeWork-body .cardBody h5{
+     font-weight: 600;
+     font-size: 28px;
+     line-height: 130%;
+     color: var(--color-black);
+     text-align: center;
+}
+.How__WeWork-body .cardBody p{
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 150%;
+     text-align: center;
+     color: #000000;
+     opacity: 0.7;
+     margin-top: 10px;
+}
+
+
+/* Testimonials */
+.testimonials{
+     width: 100%;
+     height: auto;
+}
+.testimonials .title{
+     text-align: left;
+     margin-left: 200px;
+     font-weight: 600;
+     font-size: 48.44px;
+     line-height: 150%;
+     color: var(--color-black);
+     
+    
+}
+.testimonials-Wrapper{
+     width: 1127px;
+     height: 416px;
+     margin: auto;
+     margin-top: 60px;
+}
+.testimonials-Wrapper .navClick{
+     position: absolute;
+     width: 140px;
+     height: 50px;
+     display: flex;
+     justify-content: space-between;
+     right: 200px;
+     margin-top: -120px;
+   
+}
+.carusel{
+     display: flex;
+}
+.testimonials-Card{
+     width: 420px;
+     height: 283px;
+     border: 1px solid rgba(0, 130, 244, 0.104);
+     box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.06);
+     border-radius: 10px;
+     overflow: hidden;
+     display: flex;
+     margin-right: 65px;
+}
+.testimonials-Card .card-LeftBox{
+     min-width: 62px;
+     height: 283px;
+     background: var(--color-blue);
+}
+.card-LeftBox .avatar-box{
+     position: absolute;
+     width: 64px;
+     height: 64px;
+     border-radius: 50%;
+     display: grid;
+     place-items: center;
+     z-index: 9;
+     margin-left: 20px;
+     margin-top: 100px;
+     background-color: #fff;
+
+}
+.card-RightBox {
+     padding: 30px 90px 30px 60px ;
+
+}
+.card-RightBox .text-Info{
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 150%;
+     color: var(--color-black);
+     opacity: 0.7;
+}
+.testimonials-Card .avtorProffesion{
+     margin-top: 45px;
+     padding-left: 40px;
+}
+.avtorProffesion .line{
+     position: absolute;
+     width: 30px;
+     opacity: 0.7;
+     border: 1px solid #000000;
+     margin-left: -40px;
+     margin-top: 10px;
+}
+.testimonials-Card .avtorProffesion .name{
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 120%;
+     color: #000000;
+     opacity: 0.9;
+}
+.testimonials-Card .avtorProffesion .proffesion{
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 120%;
+     color: #000000;    
+     opacity: 0.5;
+     margin-top: 10px;
+}
+
+/* register */
+.Email{
+     width: 100%;
+     height: 338px;    
+     background: rgba(232, 236, 255, 0.3);
+     display: grid;
+     place-items: center;
+}
+.Email .newsLetter h4{
+     font-weight: 500;
+     font-size: 31.25px;
+     line-height: 37px;
+     color: #058AFF;
+}
+.Email .newsLetter h5{
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 23px;
+     text-align: center;
+     color: var(--color-black);
+     opacity: 0.7;
+     margin-top: 15px;
+}
+.Email .register{
+     width: 487px;
+     height: 82px; 
+     border: 1px solid rgba(5, 138, 255, 0.208);
+     border-radius: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+}
+.Email .register .enterMail{
+     display: flex;
+     align-items: center;
+}
+.enterMail .Mail-Icon{
+     margin-right: 25px;
+}
+.enterMail form{
+     width: 400px;
+     display: flex;
+     justify-content: space-between;
+     height: 52px;
+}
+.enterMail .Mail-Input{
+     background: none;
+     outline: none;
+     border: none;
+}
+.enterMail .Mail-Input::placeholder{
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 23px;
+     
+     color: var(--color-black);
+     
+     opacity: 0.6;
+}
+
+.enterMail .sendBtn{
+     width: 102px;
+     height: 52px;
+     background: var(--color-blue);
+     border-radius: 10px;
+     border: none;
+     outline: none;
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 23px;   
+     color: #FFFFFF;
+}
+
+
+/* Footer */
+.footer{
+     width: 100%;
+     background: rgba(255, 255, 255, 0.14);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-top: 60px;
+
+}
+.footerWrapper{
+     width: 1100px;
+     height: 218px;
+     display: flex;
+     justify-content: space-between;
+   
+}
+.card-header h4{
+     font-weight: 600;
+     font-size: 25px;
+     line-height: 150%;
+     color: #000000;
+}
+.footerCard .navlistItem {
+     margin-top: 10px;
+}
+.footerCard .navlistItem a{
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 150%;
+     color: #000000;
+     opacity: 0.7;
+     letter-spacing: 0.7px;
+}
+.footerBottom{
+     width: 100%;
+     height: 120px;
+     background: linear-gradient(180deg, #058AFF 0%, rgba(57, 55, 206, 0.87) 97.91%);
+     display: flex;
+     align-items: center;
+     padding: 0 200px;
+}
+.footerBottom .copyright{
+     width: 630px;
+     height: 30px;
+     margin-right: 80px;
+}
+.footerBottom .copyright p{
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 150%;
+     color: #FFFFFF;
+}
+.footerBottom .icon-box{
+     width: 211px;
+     height: 31px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.footerBottom .signUp{
+     width: 131px;
+     height: 52px;
+     background: #FFFFFF;
+     border-radius: 10px;
+     display: grid;
+     place-items: center;
+     margin-left: 30px;
+}
+.footerBottom .signUp a{
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 23px;   
+     color: #3C61E1; 
+}
+.footerBottom .signUp:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
